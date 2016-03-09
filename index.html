@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Fireside freelancing</title>
+    <title>Fireside Freelancing</title>
     <link type="text/css" rel="stylesheet" href="CSS/normalize.css">
     <link type="text/css" rel="stylesheet" href="CSS/main.css">
 </head>
@@ -15,16 +15,6 @@
                 <img src="images/logo.png" alt="Fireside freelancing">
             </div>
             <div class="one-twelth"></div>
-            <div class="seven-twelths">
-                <nav>
-                    <ul>
-                        <li><a href="">Our product</a></li>
-                        <li><a href="">Packages</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Contact us</a></li>
-                    </ul>
-                </nav>
-            </div>
         </div>
     </header>
     <main>
@@ -44,26 +34,82 @@
                     <p>We usually respond in 1 Business Day</p>
             </div>
         </div>
-        <form action="" method="post">
+        <form action="" method="post" id="form">
             <fieldset>
                 <legend>General Info</legend>
-                <fieldset>
-                    <legend>What would you like to discuss?</legend>
 
-                    <input type="radio" name="discuss" id="discuss1">
-                    <label for="discuss1">Hiring philosophy</label>
-                    <input type="radio" name="discuss" id="discuss1">
-                    <label for="discuss1">Joining the philosophy team</label>
-                    <input type="radio" name="discuss" id="discuss1">
-                    <label for="discuss1">Other</label>
-                </fieldset>
+                <label for="name">Name*
+                    <input type="text" name="name" id="name" placeholder="John Smith">
+                </label>
+
+                <label for="email">Email*
+                    <input type="email" name="email" id="email" placeholder="name@mydomain.com">
+                </label>
+
+                <label for="company">Company
+                    <input type="text" name="company" id="company" placeholder="Acme Inc.">
+                </label>
+
+                <label for="hearAbout">How did you hear about us?
+                    <input type="text" name="hearAbout" id="hearAbout" placeholder="Event">
+                </label>
+
+                <div class="list">
+                    <fieldset>
+                        <legend>What would you like to discuss?</legend>
+
+                        <label for="discuss1">
+                            <input type="radio" name="discuss" id="discuss1"> Hiring philosophy</label>
+
+                        <label for="discuss1">
+                            <input type="radio" name="discuss" id="discuss1"> Joining the philosophy team</label>
+
+                        <label for="discuss1">
+                            <input type="radio" name="discuss" id="discuss1"> Other</label>
+                    </fieldset>
+                </div>
             </fieldset>
 
             <fieldset>
-                <legend>Product Info</legend>
+                <div class="list">
+                <legend>Project Info</legend>
+                
+                    <label for="offerings1"><input type="checkbox" name="offerings" id="offerings1"> Lean Branding</label>
+                
+                    <label for="offerings2"> <input type="checkbox" name="offerings" id="offerings2">4 Week MVP</label>
+                
+                    <label for="offerings3"><input type="checkbox" name="offerings" id="offerings3"> Product Team</label>
+                
+                    <label for="offerings4"><input type="checkbox" name="offerings" id="offerings4"> Design Sprint</label>
+                
+                    <label for="offerings5"><input type="checkbox" name="offerings" id="offerings5"> Other</label>
+                </div>
+                <label for="problem">What is the problem you are trying to solve?</label>
+                <textarea rows="4" cols="50" name="problem" id="problem"></textarea>
 
+                <label for="accomplish">What do you hope our engagement will accomplish?</label>
+                <textarea rows="4" cols="50" name="accomplish" id="accomplish"></textarea>
 
+<div class="list">
+                <legend>What is your budget range?</legend>
+                
+    <label for="budget1"><input type="radio" name="budget" id="budget1"> less than $40k</label>
+                
+    <label for="budget2"><input type="radio" name="budget" id="budget2"> $40k - $100k</label>
+                
+    <label for="budget3"><input type="radio" name="budget" id="budget3"> $100k - $250k</label>
+                
+    <label for="budget4"><input type="radio" name="budget" id="budget4"> $250k - $500k</label>
+                
+    <label for="budget5"><input type="radio" name="budget" id="budget5"> $500k +</label>
+                </div>
             </fieldset>
+            <div class="submitButton">
+                <input type="submit">
+            </div>
+            </fieldset>
+
+
         </form>
     </main>
     <footer>
